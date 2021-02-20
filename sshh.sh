@@ -1,7 +1,7 @@
 # create an account on ngrok is not already and copy the authtoken and 
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
-./ngrok authtoken 1bp2A1cfSIInBrbxlpVLypjxqcU_4swr4PC1wGjzgBJtTTyqV
+./ngrok authtoken 1bp2A1cfSIInBrbxlpVLypjxqcU_4swr4PC1wGjzgBJtTTyqV  
 ./ngrok tcp 22 &
 apt-get install -qq -o=Dpkg::Use-Pty=0 openssh-server pwgen > /dev/null
 mkdir -p /var/run/sshd
